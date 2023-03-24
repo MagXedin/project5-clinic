@@ -1,8 +1,16 @@
 :root {
     --blue7:#0284c7;
+    --blue8:#0369a1;
+
 
     --grey3:#E5E5E5;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+
 body{
     max-width: 1920px;
     margin: auto;
@@ -38,14 +46,92 @@ header {
     min-height: 537px;
 }
 
+.services-h2-background{
+    min-height: 183px;
+    padding-top: 84px;
+}
+
 .services-background {
     background-color: var(--blue7);
+    min-height: 285px;
+    padding-top: 64px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blue8);
+
 }
 
 .services {
     display: flex;
+    justify-content: space-between;
+
 }
-.service-item-1{
+
+.service-item{
+    height: 183px;
+    width: 277px;
+    border-radius: 20px;
+}
+.service-item-1 {
+
     background-image:url(image/service-3.png) ;
-    background-size: cover;
+    
+}
+
+.service-item-2 {
+
+    background-image:url(image/service-2.png) ;
+    
+}
+
+.service-item-3 {
+
+    background-image:url(image/service-1.png) ;
+    
+}
+
+/* section 3 "о клинике" */
+
+.about {
+    padding-top: 46px;
+    min-height: 668px;
+    background-image: url(image/background-1.png);
+}
+
+/* section 4 "отзывы" */
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+}
+
+.reviews-item{
+    display: inline-flex;
+    width: calc(50% - 10px);
+
+    gap: 20px;
+
+    border: 1px solid var(--grey3);
+    border-radius:20px;
+
+    padding: 30px;
+
+    margin-bottom: 40px;
+}
+.reviews-item p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.reviews__text-blue {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--blue7);
 }
