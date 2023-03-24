@@ -1,9 +1,14 @@
 :root {
+    --blue1:#f0f9ff;
     --blue7:#0284c7;
     --blue8:#0369a1;
+    --blue9:#075985;
+
 
 
     --grey3:#E5E5E5;
+    --grey6:#737373;
+    
 }
 
 * {
@@ -125,13 +130,79 @@ h2{
 
     margin-bottom: 40px;
 }
-.reviews-item p {
+.reviews__text-main {
     font-size: 14px;
     font-weight: 400;
+    color: var(--grey6);
 }
 
 .reviews__text-blue {
     font-size: 24px;
     font-weight: 700;
     color: var(--blue7);
+}
+
+/* section 5 "клиники" */
+
+.clinics-background {
+    min-height: 507px;
+    background-image:url(image/map-background.png) ;
+    position: relative;
+
+}
+
+.clinics-background h2{
+    position: relative;
+}
+
+.clinics-background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(240,249,255,0.8);
+}
+
+.clinics {
+    display: flex;
+    gap: 23px;
+    position: relative;
+}
+
+.clinics-item {
+    border: 1px solid var(--blue7);
+    border-radius: 25px;
+    padding: 23px;
+}
+
+.clinics__location{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.clinics img {
+    width: 25px;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+}
+
+/* section 6 "footer" */
+
+.footer-background {
+    min-height: 407px;
+    background-color:var(--blue1);
+}
+
+.footer-icon-text{
+    display: flex;
+
+}
+
+.address {
+    font-size: 18px;
+    font-weight: 400;
+    color:var(--blue9)
 }
