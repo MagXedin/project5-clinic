@@ -1,0 +1,51 @@
+:root {
+    --blue7:#0284c7;
+
+    --grey3:#E5E5E5;
+}
+body{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+header {
+    min-height: 60px;
+    background-color: var(--blue7);
+    color: white;
+    
+}
+
+.header-background {
+    background-image: url("image/hero.png");
+    background-size: cover;
+    background-position: center top;
+    min-height: 537px;
+}
+
+.services-background {
+    background-color: var(--blue7);
+}
+
+.services {
+    display: flex;
+}
+.service-item-1{
+    background-image:url(image/service-3.png) ;
+    background-size: cover;
+}
