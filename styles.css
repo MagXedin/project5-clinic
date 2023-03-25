@@ -1,5 +1,6 @@
 :root {
     --blue1:#f0f9ff;
+    --blue2:#e0f2fe;
     --blue7:#0284c7;
     --blue8:#0369a1;
     --blue9:#075985;
@@ -8,11 +9,13 @@
 
     --grey3:#E5E5E5;
     --grey6:#737373;
+    --grey7:#262626;
     
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
 
 
@@ -31,12 +34,30 @@ body{
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+nav{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    
+    display: flex;
+    gap: 46px;
 }
 
 h1 {
     font-size: 56px;
     font-weight: 700;
+
 }
+
+.h1-lightblue{
+    color: var(--blue7);
+}
+
 header {
     min-height: 60px;
     background-color: var(--blue7);
@@ -50,6 +71,9 @@ header {
     background-position: center top;
     min-height: 537px;
 }
+
+
+/* section 2 "наши услуги" */
 
 .services-h2-background{
     min-height: 183px;
@@ -194,15 +218,42 @@ h2{
 .footer-background {
     min-height: 407px;
     background-color:var(--blue1);
+    padding: 60px 0;
 }
 
 .footer-icon-text{
     display: flex;
+    gap: 6px;
+    align-items: center;
 
 }
 
 .address {
     font-size: 18px;
     font-weight: 400;
+    color:var(--blue9)
+}
+
+.footer__p-bold {
+    font-weight: 600;
+    font-size: 18px;
+    color:var(--blue9)
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.footer__policy {
+    text-align: right;
+    margin-top: 60px;
+    font-size: 17px;
     color:var(--blue9)
 }

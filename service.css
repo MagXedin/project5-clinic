@@ -1,0 +1,120 @@
+:root {
+    --blue1:#f0f9ff;
+    --blue2:#e0f2fe;
+    --blue7:#0284c7;
+    --blue8:#0369a1;
+    --blue9:#075985;
+
+
+
+    --grey3:#E5E5E5;
+    --grey6:#737373;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+body{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+header {
+    min-height: 60px;
+    background-color: var(--blue7);
+    color: white;
+    
+}
+
+.header-background {
+    background-image: url("image/hero.png");
+    background-size: cover;
+    background-position: center top;
+    min-height: 537px;
+}
+
+/* section 2 "лечение кариеса" */
+
+.main_h2 {
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--blue8);
+    margin-top: 120px;
+    margin-bottom: 40px;
+
+}
+
+.treatment {
+    display: flex;
+    gap: 25px;
+}
+
+.treatment img {
+    max-width: 480px;
+    border-radius: 20px;
+}
+
+.treatment p {
+    font-size: 24px;
+    color: var(--blue9);
+    text-align: justify;
+    line-height: 33px;
+}
+
+
+
+/* section 3 "цены" */
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 56px;
+    color: var(--blue8);
+}
+
+.prices {
+    max-width: 1080px;
+    margin: 6px auto;
+    
+}
+
+.prices p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue9);
+    padding: 27px;
+    
+}
+
+.prices__light {
+    background-color:var(--blue1) ;
+    border-radius: 30px;
+}
+
+.prices__dark {
+    background-color: var(--blue2);
+    border-radius: 30px;
+    margin: 12px auto;
+}
