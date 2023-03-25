@@ -1,0 +1,77 @@
+.doctors-background {
+    background-color: var(--grey1);
+    text-align: center;
+}
+
+
+.doctors-background h2 {
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: bold;
+   padding-top: 125px;
+   padding-bottom: 66px;
+}
+
+
+.doctors-description {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+    color: var(--grey6);
+    max-width: 980px ;
+    text-align: center;
+    margin: auto;
+}
+
+input {
+    max-width: 80%;
+    min-height: 63px;
+    margin-top: 83px;
+
+    border: 1px solid var(--blue3);
+    border-radius: 20px;
+    background-color: var(--blue2);
+}
+.doctors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctors img {
+    border-radius: 20px;
+}
+
+.doctor {
+    text-align: center;
+    padding-top: 110px;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--grey8);
+}
+
+.profession {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--grey8);
+
+}
+.doctor button {
+    width: 244px;
+    height: 51px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid var(--blue7);
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue7);
+
+    margin-top: 15px;
+
+}

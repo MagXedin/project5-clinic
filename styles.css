@@ -1,27 +1,36 @@
 :root {
     --blue1:#f0f9ff;
     --blue2:#e0f2fe;
+    --blue3:#BAE6FD;
+    --blue6:#0ea5e9;
     --blue7:#0284c7;
     --blue8:#0369a1;
     --blue9:#075985;
+    --blue10: #0C4A6E;
+
 
 
 
     --grey3:#E5E5E5;
     --grey6:#737373;
     --grey7:#262626;
+    --grey8:#404040;
+    --grey10:#171717;
+
     
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans';
+    
 }
 
 
 body{
     max-width: 1920px;
     margin: auto;
+
+    font-family: "Open Sans", sans-serif;
 }
 
 .inner {
@@ -51,12 +60,16 @@ nav{
 h1 {
     font-size: 56px;
     font-weight: 700;
+    padding-top: 130px;
+    padding-bottom:50px ;
 
 }
 
 .h1-lightblue{
     color: var(--blue7);
 }
+
+
 
 header {
     min-height: 60px;
@@ -68,8 +81,27 @@ header {
 .header-background {
     background-image: url("image/hero.png");
     background-size: cover;
-    background-position: center top;
+    background-position: right top;
     min-height: 537px;
+}
+
+.header-background p {
+font-size: 16px;
+line-height: 18px;
+color: var(--blue10);
+max-width: 580px;
+}
+
+.header-background button {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue1);
+    background-color: var(--blue6);
+    width: 240px;
+    height: 52px;
+    border-radius: 10px;
+    margin-top: 40px;
+
 }
 
 
@@ -88,6 +120,7 @@ header {
 
 h2{
     font-size: 40px;
+    line-height: 54.47px;
     font-weight: 700;
     text-align: center;
     color: var(--blue8);
@@ -104,7 +137,26 @@ h2{
     height: 183px;
     width: 277px;
     border-radius: 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
 }
+
+<!-- opacity
+.service-item::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right, rgba(69,152,199,0.57), rgba(0,0,0,0));
+}
+
+-->
 .service-item-1 {
 
     background-image:url(image/service-3.png) ;
@@ -123,15 +175,67 @@ h2{
     
 }
 
+.service-item h3 {
+    font-size: 24px;
+    line-height: 32px;
+
+
+    color: white;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--blue1);
+    max-width: 60%;
+   
+}
+
 /* section 3 "о клинике" */
+
+.about h2 {
+    padding-bottom: 46px;
+}
 
 .about {
     padding-top: 46px;
     min-height: 668px;
     background-image: url(image/background-1.png);
+    text-align: right;
 }
 
+.about button {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue1);
+    background-color: var(--blue6);
+    width: 240px;
+    height: 52px;
+    border-radius: 10px;
+    margin-top: 40px;
+    
+}
+
+.about p{
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+    color: var(--grey10);
+    padding-bottom: 30px;
+
+}
 /* section 4 "отзывы" */
+
+.reviews-background {
+    min-height: 816px;
+}
+
+
+.reviews-background h2 {
+    padding-top: 129px;
+    padding-bottom: 83px ;
+}
 
 .reviews{
     display: flex;
@@ -145,17 +249,23 @@ h2{
     display: inline-flex;
     width: calc(50% - 10px);
 
-    gap: 20px;
+    gap: 12px;
 
     border: 1px solid var(--grey3);
     border-radius:20px;
 
-    padding: 30px;
+    padding: 28px;
 
     margin-bottom: 40px;
 }
+
+.reviews-item img {
+    object-fit: contain;
+    object-position: top;
+}
 .reviews__text-main {
     font-size: 14px;
+    line-height: 19px;
     font-weight: 400;
     color: var(--grey6);
 }
@@ -164,6 +274,7 @@ h2{
     font-size: 24px;
     font-weight: 700;
     color: var(--blue7);
+    margin-bottom: 10px;
 }
 
 /* section 5 "клиники" */
@@ -177,6 +288,7 @@ h2{
 
 .clinics-background h2{
     position: relative;
+    padding: 52px 0px;
 }
 
 .clinics-background::before {
@@ -199,18 +311,36 @@ h2{
     border: 1px solid var(--blue7);
     border-radius: 25px;
     padding: 23px;
+    background-color: white;
 }
 
 .clinics__location{
     display: flex;
-    margin-bottom: 60px;
+    gap: 8px;
+    margin-bottom: 46px;
 }
 
 .clinics img {
-    width: 25px;
-    height: auto;
-    object-fit: contain;
+   
+     object-fit: contain;
     object-position: top;
+    
+}
+
+.text-19-600 {
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--blue9);
+
+}
+
+.text-19-400 {
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--blue9);
+
 }
 
 /* section 6 "footer" */
@@ -230,6 +360,8 @@ h2{
 
 .address {
     font-size: 18px;
+    line-height: 25px;
+
     font-weight: 400;
     color:var(--blue9)
 }
