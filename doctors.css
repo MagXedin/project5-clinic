@@ -32,20 +32,29 @@ input {
     border-radius: 20px;
     background-color: var(--blue2);
 }
+
+
 .doctors{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 20px;
+
+    margin-bottom: 119px;
 }
 
 .doctors img {
     border-radius: 20px;
+
+    box-shadow: 2px 2px 4px 0 rgba(115, 115, 115, 0.25);
 }
 
 .doctor {
     text-align: center;
     padding-top: 110px;
+
+    
 }
 
 .name {
@@ -74,4 +83,7 @@ input {
 
     margin-top: 15px;
 
+    font-family: 'open sans';
+
 }
+

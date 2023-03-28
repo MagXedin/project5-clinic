@@ -8,13 +8,12 @@
         <link rel="stylesheet" href="icons/css/all.css" />
     
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <!-- <script src="https://kit.fontawesome.com/bcc474ca0b.js" crossorigin="anonymous"></script> -->
+        
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-            rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"rel="stylesheet">
     
     </head>
 
@@ -28,11 +27,11 @@
                     <p>Dentо Plus </p>
                 
                     <nav>
-                        <a href="#service-link">Услуги</a>
-                        <a href="#about-link">О нас</a>
-                        <a href="#doctors-link">Врачи</a>
-                        <a href="#reviews-link">Отзывы</a>
-                        <a href="#clinics-link">Отделения</a>
+                        <a href="#service">Услуги</a>
+                        <a href="#about">О нас</a>
+                        <a href="#/doctors.html">Врачи</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#clinics">Отделения</a>
                 
                     </nav>
                 
@@ -64,39 +63,74 @@
 
         </section>
 
-        <section>
+        <section id="service">
+            
             <div class="services-h2-background">
                 <h2>
                     НАШИ УСЛУГИ
                 </h2>
             </div>
+
             <div class="services-background">
 
+                
+                
+                    <div class="services inner">
 
-                <div class="services inner">
+                        <i class="fa-solid fa-caret-left"></i>
+                    
+                        <div class="service-item-1 service-item">
 
-                    <div class="service-item-1 service-item">
-                        <h3>02</h3>
-                        <p>Лечение и 
-                            рестоврация зубов</p>
+                            <h3>02</h3>
+                            <div class="arrow-flex">
 
+                                <p>Лечение и
+                                    рестоврация зубов</p>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+
+                                
+                            </div>
+                            
+                    
+                        </div>
+                    
+                        <div class="service-item-2 service-item">
+                            <h3>03</h3>
+
+                            <div class="arrow-flex">
+
+                                <p>Протезирование
+                                    зубов</p>
+                                    <i class="fa-solid  fa-arrow-right-long"></i>
+
+                            </div>
+                           
+                    
+                        </div>
+                    
+                        <div class="service-item-3 service-item">
+                            <h3>04</h3>
+
+                            <div class="arrow-flex">
+                                <p>Профессиональная чистка зубов</p>
+                                <i class=" fa-solid  fa-arrow-right-long"></i>
+                            </div>
+                            
+                    
+                        </div>
+                    
+                        <i class="fa-solid fa-caret-right"></i>
+                    
                     </div>
 
-                    <div class="service-item-2 service-item">
-                        <h3>03</h3>
-                        <p>Протезирование 
-                            зубов</p>
 
-                    </div>
+                
 
-                    <div class="service-item-3 service-item">
-                        <h3>04</h3>
-                        <p>Профессиональная
-                            чистка зубов</p>
+                    
 
-                    </div>
+                    
 
-                </div>
+                
 
 
 
@@ -106,7 +140,7 @@
 
         <div class="about-background">
 
-            <section class="about">
+            <section id="about" class="about">
 
                 <h2>О КЛИНИКЕ</h2>
 
@@ -138,9 +172,9 @@
 
         <div class="reviews-background">
 
-            <h2>ВАШИ ОТЗЫВЫ</h2>
+            <h2 id="reviews">ВАШИ ОТЗЫВЫ</h2>
 
-            <section class="reviews inner">
+            <section  class="reviews inner">
 
                 <div class="reviews-item">
                     <img src="image/client-1.png" alt="">
@@ -220,11 +254,11 @@
 
         <div class="clinics-background">
 
-            <h2>
+            <h2 id="clinics" >
                 НАШИ ОТДЕЛЕНИЯ
             </h2>
 
-            <section class="clinics inner">
+            <section  class="clinics inner">
 
                 <div class="clinics-item">
                     <div class="clinics__location">
@@ -242,7 +276,7 @@
                         </div>
                     </div>
 
-                    <p class="text-19-600">+7 (823) 555-357-31</p>
+                    <p class="text-19-600 phone-number">+7 (823) 555-357-31</p>
 
                 </div>
 
@@ -264,7 +298,7 @@
                         
                     </div>
 
-                    <p class="text-19-600">+7 (823) 555-357-32</p>
+                    <p class="text-19-600 phone-number">+7 (823) 555-357-32</p>
 
                 </div>
 
@@ -286,7 +320,7 @@
                         
                     </div>
 
-                    <p class="text-19-600">+7 (823) 555-357-33</p>
+                    <p class="text-19-600 phone-number">+7 (823) 555-357-33</p>
 
                 </div>
 
@@ -349,7 +383,7 @@
                 <div class="footer__policy">
 
                     <a href="">Лицензия</a>
-                    <a href=""> Политика конфиденциальности</a>
+                    <a class="policy" href=""> Политика конфиденциальности</a>
 
                 </div>
 

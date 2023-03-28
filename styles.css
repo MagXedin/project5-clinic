@@ -48,17 +48,32 @@ body{
 
 }
 
-nav{
-    font-size: 22px;
-    font-weight: 600;
-    color: white;
-    
+nav {
     display: flex;
     gap: 46px;
 }
 
+nav a {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+   
+    color: var(--dark-orange);
+}
+
 h1 {
     font-size: 56px;
+    line-height: 59px;
     font-weight: 700;
     padding-top: 130px;
     padding-bottom:50px ;
@@ -81,7 +96,7 @@ header {
 .header-background {
     background-image: url("image/hero.png");
     background-size: cover;
-    background-position: right top;
+    background-position: top;
     min-height: 537px;
 }
 
@@ -89,7 +104,7 @@ header {
 font-size: 16px;
 line-height: 18px;
 color: var(--blue10);
-max-width: 580px;
+max-width: 600px;
 }
 
 .header-background button {
@@ -100,7 +115,15 @@ max-width: 580px;
     width: 240px;
     height: 52px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 56px;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.header-background button:hover {
+    background-color: var(--blue9);
+    cursor: pointer;
 
 }
 
@@ -130,6 +153,10 @@ h2{
 .services {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 25px;
+    
 
 }
 
@@ -145,7 +172,7 @@ h2{
     padding: 25px 15px;
 }
 
-<!-- opacity
+
 .service-item::before {
     content: "";
     position: absolute;
@@ -156,7 +183,7 @@ h2{
     background-image: linear-gradient(to right, rgba(69,152,199,0.57), rgba(0,0,0,0));
 }
 
--->
+
 .service-item-1 {
 
     background-image:url(image/service-3.png) ;
@@ -166,6 +193,8 @@ h2{
 .service-item-2 {
 
     background-image:url(image/service-2.png) ;
+
+    margin: 40px;
     
 }
 
@@ -181,6 +210,8 @@ h2{
 
 
     color: white;
+
+    position: relative;
 }
 
 .service-item p {
@@ -190,6 +221,28 @@ h2{
     color: var(--blue1);
     max-width: 60%;
    
+    position: relative;
+}
+
+
+.fa-solid {
+    color: var(--blue2);
+    font-size: 73px;
+
+    filter:drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)) ;
+}
+
+.fa-arrow-right-long {
+    position: relative;
+    color: var(--blue1);
+    font-size: 36px;
+    
+}
+
+.arrow-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 /* section 3 "о клинике" */
@@ -214,6 +267,9 @@ h2{
     height: 52px;
     border-radius: 10px;
     margin-top: 40px;
+
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     
 }
 
@@ -257,6 +313,8 @@ h2{
     padding: 28px;
 
     margin-bottom: 40px;
+
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .reviews-item img {
@@ -321,6 +379,8 @@ h2{
 }
 
 .clinics img {
+    display: block;
+    width: 32px;
    
      object-fit: contain;
     object-position: top;
@@ -341,6 +401,10 @@ h2{
     font-weight: 400;
     color: var(--blue9);
 
+}
+
+.phone-number {
+    margin-left: 26px;
 }
 
 /* section 6 "footer" */
@@ -384,8 +448,23 @@ h2{
 }
 
 .footer__policy {
+    
     text-align: right;
     margin-top: 60px;
     font-size: 17px;
     color:var(--blue9)
 }
+
+
+ .footer__policy a {
+
+    text-decoration: none;
+}
+
+.footer__policy a:visited {
+    text-decoration: none;
+    color: var(--blue9);
+}
+
+
+

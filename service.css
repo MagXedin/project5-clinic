@@ -17,8 +17,9 @@
 }
 
 .treatment img {
-    max-width: 480px;
+    max-width: 40%;
     border-radius: 20px;
+    object-fit: contain;
 }
 
 .treatment p {
@@ -63,4 +64,8 @@ h2 {
     background-color: var(--blue2);
     border-radius: 30px;
     margin: 12px auto;
+}
+
+.services-background{
+    margin-bottom: 213px;
 }
