@@ -53,14 +53,16 @@ body{
 
 .header-inner p {
     min-width: 141px;
-    margin-right: 124px;
+    margin-right: 64px;
 }
 
 nav {
     display: flex;
     column-gap: 46px;
-    row-gap: 20px;
+    row-gap: 12px;
     flex-wrap: wrap;
+    justify-content: right;
+    max-width: 64%;
     
    
 }
@@ -517,7 +519,7 @@ h2{
 
     .services {
         flex-direction: column;
-        max-width: 640px;
+        max-width: 768px;
         background-color: var(--blue7);
     }
     .services-background {
@@ -548,14 +550,27 @@ h2{
     }
 
     nav {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 568px){
+    nav {
         row-gap: 8px;
+        max-width: 82%;
+        align-self: flex-end;
     
     }
 
     .header-inner {
+        display: flex;
         flex-direction: column;
-        row-gap: 18px;
-        align-items: flex-start;
+        row-gap: 8px;
+
+    }
+
+    .header-inner p {
+        align-self: flex-start;
     }
 
 
@@ -583,5 +598,9 @@ h2{
       .header-background {
         min-height: auto;
         padding-bottom: 20px;
+      }
+
+      nav {
+        max-width: 98%;
       }
 }

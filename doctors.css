@@ -90,6 +90,8 @@ input:focus {
     border-radius: 20px;
 
     box-shadow: 2px 2px 4px 0 rgba(115, 115, 115, 0.25);
+
+    width: fit-content;
 }
 
 .doctor {
@@ -149,5 +151,12 @@ input:focus {
         width: 90%;
         padding-left: 8px;
     }
+
+    .doctors-background h2 {
+        font-size: 36px;
+    }
     
+    .doctors img {
+        width: 94%;
+    }
 }

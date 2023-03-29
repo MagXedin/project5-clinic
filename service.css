@@ -86,9 +86,17 @@ h2 {
     .treatment img {
         display: none;
     }
+    .main_h2 {
+        text-align: center;
+    }
 
     .treatment-inner p {
         position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--blue10);
+
+
     }
 
     .treatment-inner {
@@ -97,14 +105,15 @@ h2 {
         background-size: cover;
     }
 
-    .treatment-inner ::before{
+    .treatment-inner::before{
         content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(240,249,255,0.8);
+    background-color: rgba(240,249,255,0.5);
+    
     }
 
 }
