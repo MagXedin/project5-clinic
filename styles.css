@@ -12,6 +12,7 @@
 
 
     --grey3:#E5E5E5;
+    --grey5:#a3a3a3;
     --grey6:#737373;
     --grey7:#262626;
     --grey8:#404040;
@@ -29,13 +30,15 @@
 body{
     max-width: 1920px;
     margin: auto;
+    
 
     font-family: "Open Sans", sans-serif;
 }
 
 .inner {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .header-inner {
@@ -48,10 +51,20 @@ body{
 
 }
 
+.header-inner p {
+    min-width: 141px;
+    margin-right: 124px;
+}
+
 nav {
     display: flex;
-    gap: 46px;
+    column-gap: 46px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    
+   
 }
+
 
 nav a {
     font-size: 22px;
@@ -90,7 +103,7 @@ header {
     min-height: 60px;
     background-color: var(--blue7);
     color: white;
-    
+    padding:20px;
 }
 
 .header-background {
@@ -105,6 +118,7 @@ font-size: 16px;
 line-height: 18px;
 color: var(--blue10);
 max-width: 600px;
+
 }
 
 .header-background button {
@@ -124,6 +138,12 @@ max-width: 600px;
 .header-background button:hover {
     background-color: var(--blue9);
     cursor: pointer;
+    transition: 0.2s;
+}
+.about button:hover {
+    background-color: var(--blue9);
+    cursor: pointer;
+    transition: 0.5s;
 
 }
 
@@ -161,6 +181,7 @@ h2{
 }
 
 .service-item{
+    overflow: hidden;
     height: 183px;
     width: 277px;
     border-radius: 20px;
@@ -245,6 +266,11 @@ h2{
     align-items: flex-end;
 }
 
+.services i:hover {
+    transform: scale(115%);
+    transition: 0.3s;
+}
+
 /* section 3 "о клинике" */
 
 .about h2 {
@@ -252,7 +278,7 @@ h2{
 }
 
 .about {
-    padding-top: 46px;
+    padding: 46px 0px;
     min-height: 668px;
     background-image: url(image/background-1.png);
     text-align: right;
@@ -297,20 +323,22 @@ h2{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: stretch;
     
     
 }
 
 .reviews-item{
     display: inline-flex;
-    width: calc(50% - 10px);
-
+    max-width: 580px;
+    margin: auto;
     gap: 12px;
+    flex-grow: 1;
 
     border: 1px solid var(--grey3);
     border-radius:20px;
 
-    padding: 28px;
+    padding: 24px;
 
     margin-bottom: 40px;
 
@@ -341,6 +369,7 @@ h2{
     min-height: 507px;
     background-image:url(image/map-background.png) ;
     position: relative;
+    padding-bottom: 20px;
 
 }
 
@@ -363,6 +392,8 @@ h2{
     display: flex;
     gap: 23px;
     position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .clinics-item {
@@ -370,6 +401,8 @@ h2{
     border-radius: 25px;
     padding: 23px;
     background-color: white;
+    max-width: 380px;
+    
 }
 
 .clinics__location{
@@ -439,15 +472,20 @@ h2{
 .footer__top {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .footer__middle {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .footer__policy {
+   
     
     text-align: right;
     margin-top: 60px;
@@ -466,5 +504,84 @@ h2{
     color: var(--blue9);
 }
 
+.facebook-icon-image:hover {
+    transform: scale(110%);
+    transition: 0.5s;
+}
 
 
+
+
+
+@media (max-width: 1024px) {
+
+    .services {
+        flex-direction: column;
+        max-width: 640px;
+        background-color: var(--blue7);
+    }
+    .services-background {
+        background-color: transparent;
+        padding-top: 0;
+    }
+    .fa-caret-left {
+        transform: rotate(90deg);
+
+    }
+
+    .fa-caret-right {
+        transform: rotate(90deg);
+
+    }
+
+
+
+    
+
+}
+
+
+@media (max-width: 640px){
+    h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+
+    nav {
+        row-gap: 8px;
+    
+    }
+
+    .header-inner {
+        flex-direction: column;
+        row-gap: 18px;
+        align-items: flex-start;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .long-word {
+        display: none;
+      }
+
+      h1 {
+        max-width: 65%;
+        padding-top: 0px;
+        font-size: 40px;
+      }
+      .second-word {
+        display: inline-block;
+      }
+
+      .second-word::first-letter {
+        text-transform: uppercase;
+      }
+
+      .header-background {
+        min-height: auto;
+        padding-bottom: 20px;
+      }
+}
