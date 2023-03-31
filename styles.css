@@ -526,14 +526,22 @@ h2{
         background-color: transparent;
         padding-top: 0;
     }
+    
     .fa-caret-left {
         transform: rotate(90deg);
 
+    }
+    .fa-caret-left::before{
+        transform: rotate(90deg);
     }
 
     .fa-caret-right {
         transform: rotate(90deg);
 
+    }
+
+    .fa-caret-right::before{
+        transform: rotate(90deg);
     }
 
 

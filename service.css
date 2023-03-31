@@ -83,6 +83,10 @@ h2 {
 
 @media (max-width: 640px){
 
+    #caries{
+        padding: 0 0;
+    }
+
     .treatment img {
         display: none;
     }
@@ -92,9 +96,11 @@ h2 {
 
     .treatment-inner p {
         position: relative;
-        font-size: 20px;
+        font-size: 18px;
+        line-height: normal;
         font-weight: 600;
         color: var(--blue10);
+        padding: 0 10px;
 
 
     }
